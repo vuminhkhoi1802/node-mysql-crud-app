@@ -7,6 +7,7 @@ module.exports = {
         let query = "SELECT * FROM `players` ORDER BY id ASC"; // query database to get all the players
 
         // execute query
+
         db.query(query, (err, result) => {
             if (err) {
                 res.redirect('/');
@@ -26,4 +27,6 @@ module.exports = {
 
         console.log('this is after the write call')
     },
+
+
 };
